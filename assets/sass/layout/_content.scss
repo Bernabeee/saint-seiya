@@ -1,0 +1,34 @@
+.contenedor__dos--fondo {
+    background-image: url("../img/model.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.contenedor__uno {
+    height: 100vh;
+    padding: 0;
+}
+
+.contenedor__uno--contenidouno {
+    height: 60vh;
+    padding: 5rem 5rem 3rem 5rem;
+}
+
+.newsletter {
+    height: 40vh;
+    padding: 5rem 3rem;
+}
+
+.newsletter--color {
+    background-color: $smocky-black;
+    color: $white;
+}
+
+.texto__dimention--marginr {
+    margin-right: 5rem;
+}
+
+.texto__dimention--paddingr {
+    padding-right: 5rem;
+}
