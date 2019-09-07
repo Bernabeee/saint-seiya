@@ -9,18 +9,15 @@
 </head>
 <body>
 
-<div id="escena">
-    <div data-depth= "0.2" class="contenedor__mu--space">
-        <img class="caballero__space" src="assets/img/space.jpg"/>
-    </div>
-    <div data-depth= "0.2">
-        <img src="assets/img/mu.png"/>
-    </div>
-</div>
+<ul id="scene">
+    <li data-depth= "0.20" class=" layer contenedor__caballero--space">
+        <img class="caballero__mu" src="assets/img/mu.png"/>
+    </li>
+</ul>
 <script src="assets/js/parallax.js"></script>
 <script>
-    var scene = document.getElementById('escena');
-    var parallaxInstance = new Parallax(escena);
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
 </script>
 </body>
 </html>s
