@@ -6,18 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mu | Aries</title>
     <link href="assets/css/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="assets/js/smooth-parallax.min.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", function () {
+          if ( window.SmoothParallax ) {
+            window.SmoothParallax.init({
+              basePercentageOn: 'pageScroll',
+            });
+          }
+        });
+      </script>
+
 </head>
 <body>
 
-<ul id="scene">
-    <li data-depth= "0.20" class=" layer contenedor__caballero--space">
-        <img class="caballero__mu" src="assets/img/mu.png"/>
-    </li>
-</ul>
-<script src="assets/js/parallax.js"></script>
+<div id="bg" class="container-fluid" smooth-parallax="" end-movement=".25" end-position-y="-.66">
+        <ul id="scene" class="scene">
+            <li class="layer" ><img class="img-100 fondo-2 animated fadeIn delay-2s" src="assets/img/aries.png"/></li>
+            <li class="layer"><img class="img-100 fondo-2 animated fadeIn delay-3s" src="assets/img/atena.png"/></li>
+            <li class="layer" data-depth= "0.10"><img class="img-100" src="assets/img/cosmo4.png"/></li>
+            <li class="layer" data-depth= "0.30"><img class="img-100" src="assets/img/cosmo3.png"/></li>
+            <li class="layer" data-depth= "0.10"><img class="img-100" src="assets/img/cosmo5.png"/></li>
+            <li class="layer"><a href="#ejemplo"><img class="img-80" src="assets/img/casa.png"/></a></li>
+            <li class="layer" data-depth= "0.15"><img class="img-100" src="assets/img/cosmo2.png"/></li>
+            <li class="layer" data-depth= "0.10"><img class="img-100" src="assets/img/cosmo1.png"/></li>
+            <li class="layer"><img class="img-mu" src="assets/img/mu.png"/></li>
+            <li class="layer" data-depth= "0.30"><img class="img-80" src="assets/img/constelacion.png"/></li>
+        </ul>
+        <div id="texto" class="col-md-6 col-sm-8 col-12">
+            <h1 class="text-left animated fadeIn"> Mu de Aries</h1>
+            <p class="text-left animated fadeIn delay-1s">
+                    Mu es uno de los primeros Santos de Oro en aparecer, pero no da a conocer su rango hasta 
+                    la inminencia de la lucha en el Santuario, es quien repara las armaduras de Pegaso y Dragón 
+                    luego de la pelea de ambos en el Torneo Galáctico.
+            </p>
+
+        </div>
+</div>
+<div style="height: 700px; background-color: aqua; z-index: 20;" class="parallax" data-parallax="-4"></div>
+<div id="ejemplo"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script>
-    var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene);
-</script>
-</body>
-</html>s
+
+        // Pretty simple huh?
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    
+        </script>
+
+</html>

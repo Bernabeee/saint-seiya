@@ -8665,6 +8665,20 @@ table {
   border-spacing: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
 /*.boton__form--position {
     transform: rotate(90deg);
     position: absolute;
@@ -8709,29 +8723,70 @@ table {
 
     }
 }*/
-.contenedor__mu--space {
-  z-index: 1;
+body {
+  background-color: white;
+}
+
+#bg {
+  background-image: url("../img/space.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0px;
+}
+
+.layer {
+  width: 100vw;
+  height: 750px;
+}
+
+.fondo-2 {
+  height: 100%;
+}
+
+.img-100 {
+  width: 100%;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  bottom: 10px;
 }
 
-.caballero__space {
-  width: 100vw;
-  height: 100vh;
-}
-
-.contenedor__caballero--space {
+.img-80 {
+  width: 80%;
   position: absolute;
-  width: 100vw;
-  z-index: 2;
+  bottom: 10px;
 }
 
-.caballero__mu {
-  width: 500px;
-  display: block;
-  margin: auto;
-  margin-top: 150px;
+.img-70 {
+  width: 70%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.img-60 {
+  width: 60%;
+  position: absolute;
+  bottom: 10px;
+}
+
+.img-50 {
+  width: 60%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.img-mu {
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+}
+
+#texto {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=main.css.map */
